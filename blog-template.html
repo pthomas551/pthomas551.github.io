@@ -1,47 +1,29 @@
 <!DOCTYPE html>
-
-<!--
-How was it to wireframe and create an HTML page with a pair?
-
-It was fun and helpful to have someone to share ideas and resources with during the design process.
-
-Did you find wireframing to be helpful to your development process?
-
-Absolutlely, I think it's good to set clear design objectives before getting lost in the weeds of coding and formatting.
-
-What did you and your pair decide made a good wireframe?
-
-We were both fans of minimalist design that doesn't have a lot of extra elements.
-
-What new semantic elements did you learn about (if any)?
-
-I learned about and implemented the <header>,<nav>,<section>, and <article> tags.
-
--->
-
-<html>
-
 <head>
-  <title>Blogpost Title</title>
-  <link rel="stylesheet" type="text/css" href="stylesheets/default.css">
+  <title>DBC Technical Blog</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="../stylesheets/default.css">
+  <link rel="stylesheet" type="text/css" href="../stylesheets/blog.css">
 </head>
 
 <body>
-<img src="imgs/wireframe-blog-post.png"/>
-<header><h1>Phil Thomas</h1></header>
+
+<header id="name"><a href="http://pthomas551.github.io">Phil Thomas</a></header>
 
 <nav>
-  <p><h2>About</h2></p>
-  <p><h2>Blog</h2></p>
-  <p><h2>Projects</h2></p>
-  <p><h2>Contact</h2></p>
+  <h2>About</h2>
+  <h2><a href="index.html">Blog</a></h2>
+  <h2>Projects</h2>
+  <h2>Contact</h2>
 </nav>
 
-<section>
-<h3>Blogpost Title | Blogpost Date</h3>
+<section class="blogpost">
+  <h1>Post Title</h1>
+  <h4>Post Date</h4>
+    <h3 class="posttext">
+      Post text
+    </h3>
+
 </section>
-<article>
-Blogpost Text
-</article>
+
 </body>
-</html>
