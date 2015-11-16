@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<head>
+  <title>DBC Technical Blog</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="../stylesheets/default.css">
+  <link rel="stylesheet" type="text/css" href="../stylesheets/blog.css">
+</head>
+
+<body>
+
+<header id="name"><a href="http://pthomas551.github.io">Phil Thomas</a></header>
+
+<nav>
+  <h2>About</h2>
+  <h2><a href="index.html">Blog</a></h2>
+  <h2>Projects</h2>
+  <h2>Contact</h2>
+</nav>
+
+<section class="blogpost">
+  <h1>Arrays and Hashes</h1>
+  <h4>15 November 2015</h4>
+    <h3 class="posttext">
+    Arrays are a critically important concept in programming. An array can be defined as a collection of data. Much of programming involves manipulating arrays in various ways and programming languages provide a wide variety of tools for doing so.
+    </h3>
+    <h3 class="posttext">
+    There are many different types of arrays. Perhaps the simplest to understand is the one dimensional array which is a simple series of values. The values can be numbers or strings. Such an array can be defined in Ruby as follows: <code>arr = [1, 2, 3]</code> or <code>arr = ["This", "is", "a", "string."]</code>
+    </h3>
+    <h3 class="posttext">
+    A multidimensional array is an array of arrays. This is useful for storing more complex types of data. For example: <code>cities = [["Chicago", "Illinois"],["New York", "New York"],["Los Angeles", California"]]</code>
+    </h3>
+    <h3 class="posttext">
+    One critically important variety of array is the <strong>hash</strong>. A hash is a multidimensional array that contains unique key-value pairs. Hashes allow for programs to quickly and efficiently locate data by looking up the key for a particular value. An example of a hash in Ruby would be as follows - note Ruby differentiates hashes from arrays by the use of curly braces: <br/>
+    <code>prices = { <br/>
+    milk: 2.75, <br/>
+    coffee: 1.25, <br/>
+    orange_juice: 1.50 <br/>
+    }
+    </h3></code>
+    <h3 class="posttext">
+    Why would hashes be used over other types of arrays? As mentioned previously, hashes help computers locate data faster than other types of data structures. They are therefore very helpful for storing large amounts of data. As the size of a data structure increases, the amount of computing resources required to retrieve the structure also goes up, so anything that increases the efficiency of searching for data is very welcome.
+    </h3>
+    <h3 class="posttext">
+    One drawback of hashes, though, is that they require every key be unique. This makes them more difficult to use if a data set is likely to have two keys in common. In such a case it might be easier to use an array (if the data set is not too large). Otherwise, it is often possible to figure out some other kind of unique identifier that can serve as the key for the hash.
+</section>
+
+</body>
