@@ -4,6 +4,24 @@
 <head>
   <title>Phil Thomas</title>
   <link rel="stylesheet" type="text/css" href="stylesheets/default.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <!-- insert jquery to show/hide links -->
+  <script>
+    $(document).ready(function(){
+        $('.contactnav').addClass("hidden");
+
+        $('.contactnav').click(function() {
+            var $this = $(this);
+
+            if ($this.hasClass("hidden")) {
+                $(this).removeClass("hidden").addClass("visible");
+
+            } else {
+                $(this).removeClass("visible").addClass("hidden");
+            }
+        });
+    });
+</script>
 </head>
 
 <body>
@@ -14,7 +32,9 @@
   <h2>About</h2>
   <h2><a href="blog/index.html">Blog</a></h2>
   <h2>Projects</h2>
-  <h2>Contact</h2>
+  <h2 class = "contactnav"><span class="contact">Contact</span><ul class = "contactinfo"> <li><a href="https://www.linkedin.com/profile/view?id=AAIAAADlcacBFGFNZ0fOgyqSjG8KPReezccs8XE">LinkedIn</a></li>
+  <li><a href="https://github.com/pthomas551">Github</a></li>
+  <li><a href="https://twitter.com/pthomas551">Twitter</a></li></h2>
 </nav>
 
 <section>
