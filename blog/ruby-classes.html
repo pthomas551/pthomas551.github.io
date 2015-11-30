@@ -48,7 +48,7 @@
     One way in which classes are very useful is that they allow you to create easily understanable representations of real-world objects in code. Let's take the example of a car, for example. Here is how you would initialize a <em>Car</em> object in Ruby:
     </p>
     <p><code>
-      class Car
+      class Car <br/>
         attr_reader :make <br/>
         attr_reader :model <br/>
         attr_reader :year <br/>
@@ -73,11 +73,11 @@
     What did this do? We created a new instance of the <em>Car</em> object and gave it a make (Mazda), model (Miata), and year (2009). Now we can use our attr_reader methods to look up these attributes of the car:
     </p>
     <p><code>
-    irb(main):012:0> my_miata.make
-    => "Mazda"
-    irb(main):013:0> my_miata.model
-    => "Miata"
-    irb(main):014:0> my_miata.year
+    irb(main):012:0> my_miata.make <br/>
+    => "Mazda" <br/>
+    irb(main):013:0> my_miata.model<br/>
+    => "Miata"<br/>
+    irb(main):014:0> my_miata.year<br/>
     => 2009
     </p></code>
     <p>
