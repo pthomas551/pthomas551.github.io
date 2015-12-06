@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<head>
+  <title>JavaScript constructor functions</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="../stylesheets/default.css">
+  <link rel="stylesheet" type="text/css" href="../stylesheets/blog.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <!-- insert jquery to show/hide links -->
+  <script>
+    $(document).ready(function(){
+        $('.contactnav').addClass("hidden");
+
+        $('.contactnav').click(function() {
+            var $this = $(this);
+
+            if ($this.hasClass("hidden")) {
+                $(this).removeClass("hidden").addClass("visible");
+
+            } else {
+                $(this).removeClass("visible").addClass("hidden");
+            }
+        });
+    });
+</script>
+</head>
+
+<body>
+
+<header id="name"><a href="http://pthomas551.github.io">Phil Thomas</a></header>
+
+<nav>
+  <h2><a href="../about.html">About</a></h2>
+  <h2><a href="index.html">Blog</a></h2>
+  <h2><a href="../projects/index.html">Projects</a></h2>
+  <h2 class = "contactnav"><span class="contact">Contact</span><ul class = "contactinfo"> <li><a href="https://www.linkedin.com/profile/view?id=AAIAAADlcacBFGFNZ0fOgyqSjG8KPReezccs8XE">LinkedIn</a></li>
+  <li><a href="https://github.com/pthomas551">Github</a></li>
+  <li><a href="https://twitter.com/pthomas551">Twitter</a></li></h2>
+</nav>
+
+<section class="blogpost">
+  <h1>JavaScript constructor functions and Ruby classes</h1>
+  <h4>6 December 2015</h4>
+    <article class="posttext">
+    <p>
+    <em>This post builds on my previous <a href="ruby-classes.html">post on Ruby classes</a></em>.
+    </p>
+    <p>
+    As I mentioned in my post on Ruby classes, in object-oriented programming, <strong>classes</strong> are essentially templates for creating new objects. One way in which classes are very useful is that they allow you to create easily understanable representations of real-world objects in code.
+    </p>
+    <p>
+    Ruby has the built-in <strong>class</strong> object for creating classes. JavaScript does not have a class object like Ruby, but it does have a special type of function called a <strong>constructor function</strong>, which replicates the function and features of the <strong>class</strong> object. In this post we will do a quick review of Ruby class creation syntax, and then take a look at how we can replicate this using a JavaScript constructor function.
+    </p>
+    <p>
+    Let's review the Ruby class syntax first for comparison purposes. This is some possible syntax for a <em>Car</em> object in Ruby. You can go to the <a href="ruby-classes.html">previous post</a> for an overview of how this syntax works.
+    </p>
+    <p><code>
+      class Car <br/>
+        attr_reader :make <br/>
+        attr_reader :model <br/>
+        attr_reader :year <br/>
+        def initialize(make, model, year) <br/>
+          @make = make <br/>
+          @model = model <br/>
+          @year = year <br/>
+        end <br/>
+      end
+    </code></p>
+    <p>
+    Now let's look at how we would create a slightly different object, say a US state object, using a JS constructor function:
+    </p>
+    <p><code>
+    function State(name, population, foundedYear) {<br/>
+      this.name = name;<br/>
+      this.population = population;<br/>
+      this.foundedYear = foundedYear;<br/>
+    }
+    </p></code>
+    <p>
+    This constructor created a State object with three instance variables; name, population, and year of foundation. As you can see, we did not define instance methods to access these variables; this is not necessary in JS, as we will demonstrate below. First, though, let's go over how to create a new object from this constructor template:
+    </p>
+    <p><code>
+    var illinois = new State('Illinois', 12880580, 1818);
+    </p></code>
+    <p>
+    This code created a new State object called illinois with the three attributes of the constructor function contained in order within the parentheses. As you can see the syntax is very similar to creating new instances of a class in Ruby. The syntax for calling these instance attributes is very similar as well:
+    </p>
+    <p><code>
+    > illinois.name;<br/>
+    'Illinois'<br/>
+    > illinois.population;<br/>
+    12880580<br/>
+    > illinois.foundedYear;<br/>
+    1818<br/>
+    </code></p>
+    <p>The main difference between this example and our Ruby example in the previous post is that we did not need to create methods for accessing these variables as we had to in Ruby.
+    </p>
+    <p>
+    As you can see, there is not a great deal of difference between Ruby classes and JavaScript constructor functions. Perhaps the most important difference as laid out in this example is that in JS, instance attributes have read/write methods endowed on them by default; they do not need to be separately defined in the constructor function.
+    </p>
+    <p>
+    In short, even if the syntax is not quite as intuitive, JS constructors offer similar capabilities to Ruby in the area of class definitions; in fact, they are even more efficient when it comes to creating methods for accessing instance variables.
+    </p>
+    </article>
+
+</section>
+
+</body>
