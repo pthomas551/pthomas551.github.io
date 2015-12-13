@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Phil Thomas</title>
+  <link rel="stylesheet" type="text/css" href="stylesheets/default.css">
+  <link rel="stylesheet" type="text/css" href="stylesheets/cheat-sheet.css">
+</head>
+
+<body>
+
+<header class="title">
+JavaScript Iteration Statements
+</header>
+
+<nav class="heading">
+Name
+</nav>
+<section class="heading">
+Info
+</section>
+
+<nav class="iterator">
+for
+</nav>
+<section class="details">
+Repeats until given condition evaluates to false. Example:
+<p><code>
+for (var i = 0; i < 10; i++) {}
+</code></p>
+</section>
+
+<nav class="iterator">
+do...while
+</nav>
+<section class="details">
+Repeats until condition specified in while evaluates to true. Example:
+<p><code>
+do {} while (i < 10);<br/>
+</code></p>
+</section>
+
+<nav class="iterator">
+while
+</nav>
+<section class="details">
+Repeats unless condition specified in while evaluates to true. Difference with do/while is that test is performed before, not after, execution of code. Example:
+<p><code>
+while (i < 10) {}<br/>
+</code></p>
+</section>
+
+<nav class="iterator">
+for...in
+</nav>
+<section class="details">
+Iterates a variable over the properties of an enumerable object. Example:
+<p><code>
+states = {AL: "Alabama"...WY: "Wyoming"}<br/>
+for stateAbbreviation in states {}<br/>
+</code></p>
+</section>
+
+<nav class="iterator">
+for...of
+</nav>
+<section class="details">
+Iterates a variable over the values of an enumerable object. Note: newly added to JS, browser support may be inconsistent. Example:
+<p><code>
+states = {AL: "Alabama"...WY: "Wyoming"}<br/>
+for stateName in states {}<br/>
+</code></p>
+</section>
+
+</body>
+</html>
