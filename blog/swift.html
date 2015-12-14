@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Swift: An introduction</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="../stylesheets/default.css">
+    <link rel="stylesheet" type="text/css" href="../stylesheets/blog.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- insert jquery to show/hide links -->
+    <script>
+    $(document).ready(function() {
+        $('.contactnav').addClass("hidden");
+
+        $('.contactnav').click(function() {
+            var $this = $(this);
+
+            if ($this.hasClass("hidden")) {
+                $(this).removeClass("hidden").addClass("visible");
+
+            } else {
+                $(this).removeClass("visible").addClass("hidden");
+            }
+        });
+    });
+    </script>
+</head>
+
+<body>
+    <header id="name"><a href="http://pthomas551.github.io">Phil Thomas</a></header>
+    <nav>
+        <h2><a href="../about.html">About</a></h2>
+        <h2><a href="index.html">Blog</a></h2>
+        <h2><a href="../projects/index.html">Projects</a></h2>
+        <h2 class="contactnav"><span class="contact">Contact</span><ul class = "contactinfo"> <li><a href="https://www.linkedin.com/profile/view?id=AAIAAADlcacBFGFNZ0fOgyqSjG8KPReezccs8XE">LinkedIn</a></li>
+  <li><a href="https://github.com/pthomas551">Github</a></li>
+  <li><a href="https://twitter.com/pthomas551">Twitter</a></li></h2>
+    </nav>
+    <section class="blogpost">
+        <h1>Swift: an introduction</h1>
+        <h4>13 December 2015</h4>
+        <article class="posttext">
+            <p>
+                Swift is a new programming language introduced by Apple in 2014 and open-sourced in 2015. It's intended to replace Objective-C as the primary development language for Apple operating systems and is rapidly increasing in popularity. I intend on studying some Swift after finishing <a href="http://devbootcamp.com">Dev Bootcamp</a> so I thought it would be interesting to write a brief introduction to the language.
+            </p>
+            <p>
+                To introduce Swift it's first necessary to introduce Objective-C, its predecessor. Objective-C is a relatively old language; it was first introduced in 1983 and is based on the even older C programming language, which is still one of the foundations of modern software engineering. Obj-C initially popularized by Steve Jobs' company NeXT in the late 1980s and came to Apple with Apple's acquisition of NeXT in 1996. It still retains many vestiges of its earlier life; for example, many Obj-C object type names begin with NS (as in NeXTStep, the NeXT operating system.) It also shares in common with C the need to manually incorporate header files before compiling even very simple programs.
+            </p>
+            <p>
+                Swift seeks to be "Objective-C without the C" - that is, it seeks to retain the capabilities of Objective-C while incorporating recent developments and trends in programming as epitomized by the rize of scripting languages like Ruby and Python.
+            </p>
+            <p>
+                Some interesting aspects of Swift include the following:
+            </p>
+            <ul>
+                <li>
+                    Fewer legacy conventions than Objective-C (eg. removal of the NS prefix) allowing for more readable and beginner-friendly syntax
+                </li>
+                <li>
+                    Automated memory management and improved performance, which removes much of the performance management burden from developers
+                </li>
+                <li>
+                    Uses type inference so variable type declarations are unnecessary in many cases - allowing for behavior closer to Ruby/Python
+                </li>
+                <li>
+                    Easy testing and feedback through the "Playgrounds" feature in XCode, which shows code output in real time.
+                </li>
+            </ul>
+            <p>
+                The open-sourcing of Swift will only increase its adoption as it becomes available on platforms beyond OSX and iOS. It is likely to become one of the next decade's top programming language and as such is a good element of any developer's arsenal. I look forward to experimenting with it soon!
+            </p>
+            <p>
+                For more information you can check out the <a href="https://developer.apple.com/library/ios/documentation/Swift/Conceptual/Swift_Programming_Language/">Swift documentation</a> at Apple's developer site.
+        </article>
+    </section>
+</body>
