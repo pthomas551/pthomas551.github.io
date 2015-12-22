@@ -5,10 +5,10 @@ title: Home
 
 <h1>About Me</h1>
 <p>I am a native of Ann Arbor, Michigan and now live in Chicago, Illinois after a decade studying and working in Washington, DC and in Singapore. My main interests (personal and professional) lie at the intersection between globalization and transformative technology.</p><p>&nbsp;</p>
-<h2>Blog Posts</h2>
+<h2>Latest Posts</h2>
 
 <div class="posts">
-  {% for post in site.posts %}
+  {% for post in site.posts limit:3 %}
 
     <h4 class="post-title">
       <a href="{{ post.url }}">
