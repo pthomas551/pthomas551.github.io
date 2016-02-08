@@ -1,5 +1,5 @@
 # Dependencies
-markdown:         redcarpet
+markdown:         kramdown
 highlighter:      pygments
 gems:             [jekyll-paginate,redcarpet,jekyll-gist,pygments.rb]
 
@@ -24,4 +24,3 @@ paginate_path:    'blog/page:num'
 # Default extension for new posts and pages
 post_ext: markdown
 page_ext: html
-
