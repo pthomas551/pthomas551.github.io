@@ -5,6 +5,7 @@ title: About Me
 <p>
 I am a native of Ann Arbor, Michigan and now live in Chicago, Illinois after a decade studying and working in Washington, DC and a year in Singapore splitting my time between freelance consulting and traveling.
 </p>
+<p>
 My main interests lie at the intersection between globalization and transformative technology. What does this mean in practice? To quote William Gibson, I believe that the "future is here...just not very evenly distributed." As technology becomes more widely distributed throughout the world, new innovations and challenges will emerge, and a new class of professionals will be required to navigate the resulting opportunities. I intend to be at the center of it.
 </p>
 <p>
