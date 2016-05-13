@@ -3,7 +3,7 @@ layout: post
 title: "Rails 5 API Mode: The Basics"
 date: 2016-05-13T15:04:32-05:00
 ---
-This is a continuation of my series of posts on Rails 5. For more information see my [original post]({% post_url 2016-04-20-rails-5-whats-new %}) on Rails 5 and the new features coming and my [earlier post on Action Cable]({% post_url 2016-05-03-action-cable-the-basics %}).
+This is a continuation of my series of posts on Rails 5. For more information see my [original post]({% post_url 2016-04-20-rails-5-whats-new %}) on Rails 5 and my [earlier post on Action Cable]({% post_url 2016-05-03-action-cable-the-basics %}).
 
 API Mode is another of the key additions to Rails 5 and allows for the development of slimmed down Rails apps that communicate only in JSON. It's well suited for web applications that rely heavily on JavaScript, especially if they use a containerized infrastructure like Docker. By using API mode, you have access to the great Active Record ORM and all the ease of use Rails while avoiding the various pitfalls of using Rails for a complex Javascript application.
 
