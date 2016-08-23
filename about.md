@@ -2,7 +2,7 @@
 layout: page
 title: About Me
 ---
-I am a native of Ann Arbor, Michigan and now live in Chicago, Illinois after a decade studying and working in Washington, DC and eighteen months in Singapore. I currently work as Director of Product at [YuVue](http://yuvue.com "Yuvue"), LLC. We develop software that helps brands collect and curate user-generated content. 
+I currently work as Director of Product at [YuVue](http://yuvue.com "Yuvue"), LLC. We are a start-up based in Chicago, San Francisco, and New York that helps brands collect and curate user-generated content.
 
 My main interests lie at the intersection between globalization and transformative technology. What does this mean in practice? To quote William Gibson, I believe that the "future is here...just not very evenly distributed." As technology becomes more widely distributed throughout the world, new innovations and challenges will emerge, and a new class of professionals will be required to navigate the resulting opportunities. I intend to be at the center of it.
 
